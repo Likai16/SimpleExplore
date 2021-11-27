@@ -2,6 +2,7 @@ package com.dnielfe.manager;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -51,6 +52,11 @@ public class SearchActivity extends ThemableActivity implements SearchView.OnQue
             getSupportActionBar().setSubtitle(String.valueOf(mAdapter.getCount())
                     + getString(R.string._files));
         }
+    }
+
+    public void sendMes(View view){
+        Intent intent1=new Intent(this,welcomeActivity.class);
+        startActivity(intent1);
     }
 
     @Override

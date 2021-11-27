@@ -4,7 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/support_toolbar" />
+    <include
+        layout="@layout/support_toolbar"
+        android:onClick="sendMes" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendMes"
+        android:text="welcome" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,11 +28,11 @@
             android:id="@android:id/empty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
             android:text="@string/empty"
-            android:textSize="22sp"
-            android:textColor="?colorAccent" />
+            android:textColor="?colorAccent"
+            android:textSize="22sp" />
 
     </RelativeLayout>
+
 </LinearLayout>
