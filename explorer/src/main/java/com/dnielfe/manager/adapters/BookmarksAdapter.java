@@ -29,6 +29,12 @@ public class BookmarksAdapter extends BaseAdapter {
 
         mBookmarksList = db.getAllBooks();
     }
+    public int testdemo1(int a,int b){
+        return a+b;
+    }
+    public boolean testdemo2(boolean f){
+        return !f;
+    }
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
